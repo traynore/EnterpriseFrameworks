@@ -1,0 +1,2 @@
+"InvNo","Surname","Name","Address1","Address2","Address3","Address4","QtyRateA","ASubTotal","QtyRateB","BSubTotal","QtyRateC","CSubTotal","QtyRateD","DSubTotal","QtyRateE","ESubTotal","Total","Arrears2008","Arrears2009","Arrears2010","Arrears2011","TotalArrears","GrandTotal","Paid"
+1,AITKEN,PAUL,CARRICKAVEE,BALLYJAMESDUFF,,CO.CAVAN,115,,118, 62.54 ,,   ,,  ,,    , 62.54 ,57.77 ,80.03 ,47.70 ,30.21 ,277.72,340.26 ,

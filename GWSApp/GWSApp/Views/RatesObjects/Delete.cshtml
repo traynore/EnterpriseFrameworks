@@ -1,0 +1,104 @@
+﻿@model GWSApp.Models.RatesObject
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>RatesObject</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BandA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BandA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BandB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BandB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BandC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BandC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BandD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BandD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RateA)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RateA)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RateB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RateB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RateC)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RateC)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RateD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RateD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.RateE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.RateE)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
