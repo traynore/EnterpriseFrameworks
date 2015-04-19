@@ -18,9 +18,23 @@ namespace GWSApp.Controllers
         private GWSContext db = new GWSContext();
 
         // GET: Customers
+        [HttpPost]
         public ActionResult Index()
         {
             return View(db.Customers.ToList());
+        }
+        [HttpGet]
+        public ActionResult Index(string searchString)
+        {
+            var customers = from m in db.Customers
+                            select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                customers = customers.Where(s => s.LastName.Contains(searchString));
+            }
+
+            return View(customers);
         }
 
         // GET: Customers/Details/5

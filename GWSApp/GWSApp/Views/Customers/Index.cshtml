@@ -7,12 +7,18 @@
 @ViewBag.AppData
 <h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<p>
-    @Html.ActionLink("Import CSV", "ImportCsv")
-</p>
+@using (Html.BeginForm("Index", "Customers", FormMethod.Get))
+{
+    <p>
+        Search customer by Surname: @Html.TextBox("SearchString") <input type="submit" value="Search" />
+    </p>
+}
+
+<p>@Html.ActionLink("Create New Customer Record", "Create")</p>
+
+
+<p>@Html.ActionLink("Import CSV File", "ImportCsv")</p>
+
 <table class="table">
     <tr>
         <th>
