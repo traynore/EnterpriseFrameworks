@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GWSApp.App_Start;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +17,12 @@ namespace GWSApp
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
-            Application["AppData"] = "If you can read this, Application state from Global.asx is working";
+            var rates = AppdataConfig.LoadRates();
+            if (rates != null)
+            {
+                Application["Rates"] = rates;
+            }
+
         }
     }
 }

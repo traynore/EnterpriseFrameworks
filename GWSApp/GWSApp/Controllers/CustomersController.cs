@@ -20,8 +20,6 @@ namespace GWSApp.Controllers
         // GET: Customers
         public ActionResult Index()
         {
-            ViewBag.AppData = HttpContext.Application["AppData"].ToString();
-            //var test = db.Customers.ToList();
             return View(db.Customers.ToList());
         }
 

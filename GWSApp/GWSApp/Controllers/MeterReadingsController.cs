@@ -58,7 +58,8 @@ namespace GWSApp.Controllers
                 db.SaveChanges();
 
                 // generate invoice using usage
-                RatesObject rates = db.RatesObjects.First();
+                // rates are caled from Application state rather than querying DB
+                RatesObject rates = (RatesObject)HttpContext.Application["Rates"];
                 Invoice newInvoice = new Invoice();
                 newInvoice.CustomerID = meterReading.CustomerID;
                 newInvoice.Year = meterReading.Year;
