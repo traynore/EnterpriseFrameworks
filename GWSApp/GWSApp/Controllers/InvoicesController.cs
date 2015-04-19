@@ -40,7 +40,7 @@ namespace GWSApp.Controllers
         // GET: Invoices/Create
         public ActionResult Create()
         {
-            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "LastName");
+            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "FullName");
             return View();
         }
 
@@ -58,7 +58,7 @@ namespace GWSApp.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "LastName", invoice.CustomerID);
+            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "FullName", invoice.CustomerID);
             return View(invoice);
         }
 
@@ -74,7 +74,7 @@ namespace GWSApp.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "LastName", invoice.CustomerID);
+            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "FullName", invoice.CustomerID);
             return View(invoice);
         }
 

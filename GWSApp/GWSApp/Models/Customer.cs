@@ -32,6 +32,15 @@ namespace GWSApp.Models
         [Display(Name = "Email")]
         public string Email { get; set; }
 
+        [Display(Name = "Full Name")]
+        public string FullName
+        {
+            get
+            {
+                return LastName + ", " + FirstName;
+            }
+        }
+
         public virtual ICollection<MeterReading> MeterReadings { get; set; }
         public virtual ICollection<Invoice> Invoices { get; set; }
         public virtual ICollection<Note> Notes { get; set; }

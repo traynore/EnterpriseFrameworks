@@ -16,6 +16,7 @@ namespace GWSApp
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            Application["AppData"] = "If you can read this, Application state from Global.asx is working";
         }
     }
 }

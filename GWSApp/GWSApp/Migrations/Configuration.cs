@@ -9,8 +9,7 @@ namespace GWSApp.Migrations
     {
         public Configuration()
         {
-            AutomaticMigrationsEnabled = false;
-            ContextKey = "GWSApp.DAL.GWSContext";
+            AutomaticMigrationsEnabled = true;
         }
 
         protected override void Seed(GWSApp.DAL.GWSContext context)

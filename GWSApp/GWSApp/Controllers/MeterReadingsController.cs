@@ -40,7 +40,7 @@ namespace GWSApp.Controllers
         // GET: MeterReadings/Create
         public ActionResult Create()
         {
-            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "LastName");
+            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "FullName");
             return View();
         }
 
@@ -130,7 +130,7 @@ namespace GWSApp.Controllers
 
             }
 
-            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "LastName", meterReading.CustomerID);
+            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "FullName", meterReading.CustomerID);
             return View(meterReading);
         }
 
@@ -146,7 +146,7 @@ namespace GWSApp.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "LastName", meterReading.CustomerID);
+            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "FullName", meterReading.CustomerID);
             return View(meterReading);
         }
 
@@ -163,7 +163,7 @@ namespace GWSApp.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "LastName", meterReading.CustomerID);
+            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "FullName", meterReading.CustomerID);
             return View(meterReading);
         }
 

@@ -7,7 +7,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D7BD0AE7-DBF0-4F3D-B8A4-F3549656AF69}</ProjectGuid>
+    <ProjectGuid>{3C0FB61E-8B56-4340-99B5-2F30E77C149F}</ProjectGuid>
     <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -40,14 +40,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="CsvHelper">
-      <HintPath>..\packages\CsvHelper.2.12.0.0\lib\net40-client\CsvHelper.dll</HintPath>
+      <HintPath>..\packages\CsvHelper.2.13.0.0\lib\net40-client\CsvHelper.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Runtime.Serialization" />
-    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -175,42 +173,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201504121010285_InitialCreate.cs" />
-    <Compile Include="Migrations\201504121010285_InitialCreate.Designer.cs">
-      <DependentUpon>201504121010285_InitialCreate.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504121401534_Initial.cs" />
-    <Compile Include="Migrations\201504121401534_Initial.Designer.cs">
-      <DependentUpon>201504121401534_Initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504121522102_nullable.cs" />
-    <Compile Include="Migrations\201504121522102_nullable.Designer.cs">
-      <DependentUpon>201504121522102_nullable.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504141926515_adjustinvoice.cs" />
-    <Compile Include="Migrations\201504141926515_adjustinvoice.Designer.cs">
-      <DependentUpon>201504141926515_adjustinvoice.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504151612192_datatypes.cs" />
-    <Compile Include="Migrations\201504151612192_datatypes.Designer.cs">
-      <DependentUpon>201504151612192_datatypes.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504171857574_rates.cs" />
-    <Compile Include="Migrations\201504171857574_rates.Designer.cs">
-      <DependentUpon>201504171857574_rates.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504180530495_invoiceBands.cs" />
-    <Compile Include="Migrations\201504180530495_invoiceBands.Designer.cs">
-      <DependentUpon>201504180530495_invoiceBands.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504180558440_invoiceBands1.cs" />
-    <Compile Include="Migrations\201504180558440_invoiceBands1.Designer.cs">
-      <DependentUpon>201504180558440_invoiceBands1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504180730575_invoiceBands2.cs" />
-    <Compile Include="Migrations\201504180730575_invoiceBands2.Designer.cs">
-      <DependentUpon>201504180730575_invoiceBands2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -285,23 +247,23 @@
     <Content Include="Views\Customers\Delete.cshtml" />
     <Content Include="Views\Customers\Details.cshtml" />
     <Content Include="Views\Customers\Edit.cshtml" />
-    <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Customers\ImportCsv.cshtml" />
-    <Content Include="Views\RatesObjects\Create.cshtml" />
-    <Content Include="Views\RatesObjects\Delete.cshtml" />
-    <Content Include="Views\RatesObjects\Details.cshtml" />
-    <Content Include="Views\RatesObjects\Edit.cshtml" />
-    <Content Include="Views\RatesObjects\Index.cshtml" />
-    <Content Include="Views\MeterReadings\Create.cshtml" />
-    <Content Include="Views\MeterReadings\Delete.cshtml" />
-    <Content Include="Views\MeterReadings\Details.cshtml" />
-    <Content Include="Views\MeterReadings\Edit.cshtml" />
-    <Content Include="Views\MeterReadings\Index.cshtml" />
+    <Content Include="Views\Customers\Index.cshtml" />
     <Content Include="Views\Invoices\Create.cshtml" />
     <Content Include="Views\Invoices\Delete.cshtml" />
     <Content Include="Views\Invoices\Details.cshtml" />
     <Content Include="Views\Invoices\Edit.cshtml" />
     <Content Include="Views\Invoices\Index.cshtml" />
+    <Content Include="Views\MeterReadings\Create.cshtml" />
+    <Content Include="Views\MeterReadings\Delete.cshtml" />
+    <Content Include="Views\MeterReadings\Details.cshtml" />
+    <Content Include="Views\MeterReadings\Edit.cshtml" />
+    <Content Include="Views\MeterReadings\Index.cshtml" />
+    <Content Include="Views\RatesObjects\Create.cshtml" />
+    <Content Include="Views\RatesObjects\Delete.cshtml" />
+    <Content Include="Views\RatesObjects\Details.cshtml" />
+    <Content Include="Views\RatesObjects\Edit.cshtml" />
+    <Content Include="Views\RatesObjects\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -313,38 +275,6 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201504121010285_InitialCreate.resx">
-      <DependentUpon>201504121010285_InitialCreate.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504121401534_Initial.resx">
-      <DependentUpon>201504121401534_Initial.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504121522102_nullable.resx">
-      <DependentUpon>201504121522102_nullable.cs</DependentUpon>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504141926515_adjustinvoice.resx">
-      <DependentUpon>201504141926515_adjustinvoice.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504151612192_datatypes.resx">
-      <DependentUpon>201504151612192_datatypes.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504171857574_rates.resx">
-      <DependentUpon>201504171857574_rates.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504180530495_invoiceBands.resx">
-      <DependentUpon>201504180530495_invoiceBands.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504180558440_invoiceBands1.resx">
-      <DependentUpon>201504180558440_invoiceBands1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504180730575_invoiceBands2.resx">
-      <DependentUpon>201504180730575_invoiceBands2.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
@@ -362,9 +292,9 @@
         <WebProjectProperties>
           <UseIIS>True</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>50419</DevelopmentServerPort>
+          <DevelopmentServerPort>56211</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
-          <IISUrl>http://localhost:50419/</IISUrl>
+          <IISUrl>http://localhost:56066/</IISUrl>
           <NTLMAuthentication>False</NTLMAuthentication>
           <UseCustomServer>False</UseCustomServer>
           <CustomServerUrl>
