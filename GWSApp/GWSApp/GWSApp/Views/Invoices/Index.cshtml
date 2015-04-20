@@ -1,0 +1,123 @@
+﻿@model IEnumerable<GWSApp.Models.Invoice>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Customer.FullName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QtyRateA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QtyRateB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QtyRateC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QtyRateD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.QtyRateE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubtotalA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubtotalB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubtotalC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubtotalD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubtotalE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Total)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Arrears)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GrandTotal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AmountPaid)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Customer.FullName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QtyRateA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QtyRateB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QtyRateC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QtyRateD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.QtyRateE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubtotalA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubtotalB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubtotalC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubtotalD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SubtotalE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Total)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Arrears)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GrandTotal)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AmountPaid)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,87 @@
+﻿@model IEnumerable<GWSApp.Models.RatesObject>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Description)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BandA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BandB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BandC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BandD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RateA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RateB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RateC)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RateD)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RateE)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Description)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BandA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BandB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BandC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BandD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RateA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RateB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RateC)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RateD)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RateE)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
