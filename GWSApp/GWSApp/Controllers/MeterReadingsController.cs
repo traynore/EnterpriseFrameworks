@@ -18,6 +18,10 @@ namespace GWSApp.Controllers
         // GET: MeterReadings
         public ActionResult Index()
         {
+            if (Request.QueryString["error"] == "error")
+            {
+                ViewBag.Error = "<p class='text-danger'>Meter Reading for that year and customer exist already. Please Edit instead.</p>";
+            }
             var meterReadings = db.MeterReadings.Include(m => m.Customer);
             return View(meterReadings.ToList());
         }
@@ -54,6 +58,19 @@ namespace GWSApp.Controllers
 
             if (ModelState.IsValid)
             {
+
+                // check to ensure there is not already a reading for that customer and year
+
+                var readings = from c in db.MeterReadings
+                             select c;
+                readings = readings.Where(s => s.CustomerID.Equals(meterReading.CustomerID));
+                if (readings.Where(t => t.Year.Equals(meterReading.Year)).Count() > 0)
+                {
+                    return RedirectToAction("Index", new { error = "error" });
+                    //return RedirectToAction("Index");
+                }
+
+                
                 db.MeterReadings.Add(meterReading);
                 db.SaveChanges();
 
@@ -126,6 +143,13 @@ namespace GWSApp.Controllers
                 newInvoice.Total = newInvoice.SubtotalA + newInvoice.SubtotalB + newInvoice.SubtotalC + newInvoice.SubtotalD + newInvoice.SubtotalE;
                 newInvoice.GrandTotal = newInvoice.Total + newInvoice.Arrears;
                 db.Invoices.Add(newInvoice);
+
+                // create a new note
+                Note newNote = new Note();
+                newNote.CustomerID = meterReading.CustomerID;
+                newNote.NoteText = "Meter Reading added and Invoice Calculated at " + DateTime.Now + ".";
+                db.Notes.Add(newNote);
+
                 db.SaveChanges();
                 return RedirectToAction("Index");
 

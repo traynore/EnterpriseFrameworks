@@ -1,16 +1,13 @@
-﻿@model IEnumerable<GWSApp.Models.MeterReading>
+﻿@model IEnumerable<GWSApp.Models.Note>
 
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Meter Readings</h2>
-<p>Quantities in cubic metres.</p>
-
-@Html.Raw(ViewBag.Error)
+<h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Enter New Reading", "Create")
+    @Html.ActionLink("Create New", "Create")
 </p>
 <table class="table">
     <tr>
@@ -18,10 +15,10 @@
             @Html.DisplayNameFor(model => model.Customer.LastName)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Year)
+            @Html.DisplayNameFor(model => model._Date)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Quantity)
+            @Html.DisplayNameFor(model => model.NoteText)
         </th>
         <th></th>
     </tr>
@@ -32,10 +29,10 @@
             @Html.DisplayFor(modelItem => item.Customer.LastName)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Year)
+            @Html.DisplayFor(modelItem => item._Date)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Quantity)
+            @Html.DisplayFor(modelItem => item.NoteText)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |

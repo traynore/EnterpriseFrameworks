@@ -169,10 +169,27 @@
     <Compile Include="Controllers\InvoicesController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\MeterReadingsController.cs" />
+    <Compile Include="Controllers\NotesController.cs" />
     <Compile Include="Controllers\RatesObjectsController.cs" />
     <Compile Include="DAL\GWSContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504200626519_meterEdit.cs" />
+    <Compile Include="Migrations\201504200626519_meterEdit.Designer.cs">
+      <DependentUpon>201504200626519_meterEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504200633542_meterEditrollback.cs" />
+    <Compile Include="Migrations\201504200633542_meterEditrollback.Designer.cs">
+      <DependentUpon>201504200633542_meterEditrollback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504201700098_notedate.cs" />
+    <Compile Include="Migrations\201504201700098_notedate.Designer.cs">
+      <DependentUpon>201504201700098_notedate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504201725031_noteformat.cs" />
+    <Compile Include="Migrations\201504201725031_noteformat.Designer.cs">
+      <DependentUpon>201504201725031_noteformat.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -265,6 +282,11 @@
     <Content Include="Views\RatesObjects\Details.cshtml" />
     <Content Include="Views\RatesObjects\Edit.cshtml" />
     <Content Include="Views\RatesObjects\Index.cshtml" />
+    <Content Include="Views\Notes\Create.cshtml" />
+    <Content Include="Views\Notes\Delete.cshtml" />
+    <Content Include="Views\Notes\Details.cshtml" />
+    <Content Include="Views\Notes\Edit.cshtml" />
+    <Content Include="Views\Notes\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -276,6 +298,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201504200626519_meterEdit.resx">
+      <DependentUpon>201504200626519_meterEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504200633542_meterEditrollback.resx">
+      <DependentUpon>201504200633542_meterEditrollback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504201700098_notedate.resx">
+      <DependentUpon>201504201700098_notedate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504201725031_noteformat.resx">
+      <DependentUpon>201504201725031_noteformat.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
