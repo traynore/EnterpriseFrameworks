@@ -112,7 +112,7 @@ namespace GWSApp.Controllers
                 {
                     if (meterReading.Quantity >= rates.BandC)
                     {
-                        newInvoice.QtyRateB = rates.BandC - rates.BandB; // 800-400 = 400
+                        newInvoice.QtyRateC = rates.BandC - rates.BandB; // 800-400 = 400
                     }
                     else
                     {

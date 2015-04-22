@@ -12,6 +12,9 @@ using GWSApp.Models;
 using iTextSharp.text;
 using iTextSharp.text.pdf;
 using iTextSharp.text.html.simpleparser;
+using System.Net;
+using System.Net.Mail;
+using System.Threading.Tasks;
 
 namespace GWSApp.Controllers
 {
@@ -145,7 +148,7 @@ namespace GWSApp.Controllers
             RatesObject rates = (RatesObject)HttpContext.Application["Rates"];
 
             Document doc = new Document(iTextSharp.text.PageSize.A4, 50, 50, 25, 25);
-            var path = AppDomain.CurrentDomain.BaseDirectory + "pdf/" + customer.FullName + " Invoice " + invoice.Year + ".pdf";
+            var path = AppDomain.CurrentDomain.BaseDirectory + "pdf/" + customer.ID + customer.FullName +" Invoice " + invoice.Year + ".pdf";
             var output = new FileStream(path, FileMode.Create);
             PdfWriter wri = PdfWriter.GetInstance(doc, output);
 
@@ -312,6 +315,56 @@ namespace GWSApp.Controllers
 
             return RedirectToAction("Index", new { pdf = "pdf" });
 
+        }
+
+
+        public async Task<ActionResult> Mail(int? id)
+        {
+
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Invoice invoice = db.Invoices.Find(id);
+            if (invoice == null)
+            {
+                return HttpNotFound();
+            }
+            
+            Customer customer = db.Customers.Find(invoice.CustomerID);
+       
+            var body = "<p>Email From: Meter Matters </p><p>Message: Dear " + customer.FirstName +", here is your invoice for " + invoice.Year + ".</p><p></p>";
+            var message = new MailMessage();
+            message.To.Add(new MailAddress(customer.Email));   
+            message.From = new MailAddress("metermatters@gmail.com");  
+            message.Subject = "GWS Invoice Mailer";
+            message.Body = string.Format(body);
+            message.IsBodyHtml = true;
+            try
+            {
+                message.Attachments.Add(new Attachment(HttpContext.Server.MapPath("~/pdf/" + +customer.ID + customer.FullName + " Invoice " + invoice.Year + ".pdf")));
+            }
+            catch
+            {
+                //darn, there was an error
+
+            }
+                using (var smtp = new SmtpClient())
+                {
+                    var credential = new NetworkCredential
+                    {
+                        UserName = "metermatters@gmail.com",  
+                        Password = "Imameter"  
+                    };
+                    smtp.Credentials = credential;
+                    smtp.Host = "smtp.gmail.com";
+                    smtp.Port = 587;
+                    smtp.EnableSsl = true;
+                    await smtp.SendMailAsync(message);
+                }
+
+
+            return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)

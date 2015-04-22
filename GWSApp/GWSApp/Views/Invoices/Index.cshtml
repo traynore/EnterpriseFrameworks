@@ -8,6 +8,8 @@
 
 @Html.Raw(ViewBag.Message)
 
+@Html.ActionLink("Mail", "Mail")
+
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -115,7 +117,8 @@
             @Html.DisplayFor(modelItem => item.AmountPaid)
         </td>
         <td>
-            @Html.ActionLink("Create PDF", "ExportPdf", new { id = item.ID })
+            @Html.ActionLink("Create PDF", "ExportPdf", new { id = item.ID }) |
+            @Html.ActionLink("Email invoice", "Mail", new { id = item.ID }) |
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
             @Html.ActionLink("Details", "Details", new { id=item.ID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })
