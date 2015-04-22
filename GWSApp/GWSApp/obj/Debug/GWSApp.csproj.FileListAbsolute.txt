@@ -61,3 +61,7 @@ C:\Users\Nihil\documents\visual studio 2013\Projects\GWSApp\GWSApp\obj\Debug\GWS
 C:\Users\Nihil\documents\visual studio 2013\Projects\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.meterEditrollback.resources
 C:\Users\Nihil\documents\visual studio 2013\Projects\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.notedate.resources
 C:\Users\Nihil\documents\visual studio 2013\Projects\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.noteformat.resources
+C:\Users\Nihil\Documents\Visual Studio 2013\Projects\GWSApp\GWSApp\bin\itextsharp.dll
+C:\Users\Nihil\Documents\Visual Studio 2013\Projects\GWSApp\GWSApp\bin\itextsharp.pdfa.dll
+C:\Users\Nihil\Documents\Visual Studio 2013\Projects\GWSApp\GWSApp\bin\itextsharp.xtra.dll
+C:\Users\Nihil\Documents\Visual Studio 2013\Projects\GWSApp\GWSApp\bin\itextsharp.xml

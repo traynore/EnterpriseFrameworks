@@ -10,7 +10,6 @@ using System.Web.Mvc;
 using GWSApp.DAL;
 using GWSApp.Models;
 using CsvHelper;
-using System.IO;
 
 namespace GWSApp.Controllers
 {
