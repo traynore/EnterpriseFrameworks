@@ -23,6 +23,7 @@ namespace GWSApp.Controllers
         private GWSContext db = new GWSContext();
 
         // GET: Invoices
+        [HttpPost]
         public ActionResult Index()
         {
             if (Request.QueryString["pdf"] == "pdf")
@@ -30,6 +31,18 @@ namespace GWSApp.Controllers
                 ViewBag.Message = "<p>PDF Created Successfully.</p>";
             }
             var invoices = db.Invoices.Include(i => i.Customer);
+            return View(invoices.ToList());
+        }
+        [HttpGet]
+        public ActionResult Index(string searchString)
+        {
+            var invoices = from m in db.Invoices.Include(i => i.Customer) select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                invoices = invoices.Where(s => s.Customer.LastName.Equals(searchString));
+            }
+
             return View(invoices.ToList());
         }
 
