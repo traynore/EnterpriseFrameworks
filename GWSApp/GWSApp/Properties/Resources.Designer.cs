@@ -61,11 +61,11 @@ namespace GWSApp.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to EnterpriseFrameworks\GWSApp\GWSApp\GWSApp\GWSApp.csproj.
+        ///   Looks up a localized string similar to localResource.RootPath, &quot;EnterpriseFrameworks\GWSApp\GWSApp\GWSApp\GWSApp.csproj&quot;.
         /// </summary>
-        internal static string project {
+        internal static string paths {
             get {
-                return ResourceManager.GetString("project", resourceCulture);
+                return ResourceManager.GetString("paths", resourceCulture);
             }
         }
     }
