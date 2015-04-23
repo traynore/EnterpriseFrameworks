@@ -199,3 +199,4 @@ C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\Enterpr
 C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\obj\Debug\GWSApp.csproj.GenerateResource.Cache
 C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\obj\Debug\GWSApp.dll
 C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\obj\Debug\GWSApp.pdb
+C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\obj\Debug\GWSApp.Properties.Resources.resources

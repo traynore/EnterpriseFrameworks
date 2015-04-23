@@ -59,14 +59,5 @@ namespace GWSApp.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to LocalResource = localResource.RootPath, &quot;EnterpriseFrameworks\GWSApp\GWSApp\GWSApp\GWSApp.csproj&quot;.
-        /// </summary>
-        internal static string LocalResource {
-            get {
-                return ResourceManager.GetString("LocalResource", resourceCulture);
-            }
-        }
     }
 }

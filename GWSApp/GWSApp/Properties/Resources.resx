@@ -117,7 +117,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="LocalResource" xml:space="preserve">
-    <value>LocalResource = localResource.RootPath, "EnterpriseFrameworks\GWSApp\GWSApp\GWSApp\GWSApp.csproj"</value>
-  </data>
 </root>
