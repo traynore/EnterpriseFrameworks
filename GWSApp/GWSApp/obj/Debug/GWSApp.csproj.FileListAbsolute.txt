@@ -199,3 +199,4 @@ C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.noteformat.resourc
 C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.csproj.GenerateResource.Cache
 C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.dll
 C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.pdb
+C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.invoicePaidFlag.resources

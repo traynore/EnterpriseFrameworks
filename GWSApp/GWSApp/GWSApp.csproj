@@ -200,6 +200,10 @@
     <Compile Include="Migrations\201504201725031_noteformat.Designer.cs">
       <DependentUpon>201504201725031_noteformat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504241421041_invoicePaidFlag.cs" />
+    <Compile Include="Migrations\201504241421041_invoicePaidFlag.Designer.cs">
+      <DependentUpon>201504241421041_invoicePaidFlag.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Class1.cs" />
@@ -323,6 +327,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504201725031_noteformat.resx">
       <DependentUpon>201504201725031_noteformat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504241421041_invoicePaidFlag.resx">
+      <DependentUpon>201504241421041_invoicePaidFlag.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

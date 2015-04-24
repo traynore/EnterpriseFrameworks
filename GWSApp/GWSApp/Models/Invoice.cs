@@ -37,6 +37,20 @@ namespace GWSApp.Models
         [DataType(DataType.Currency)]
         public float AmountPaid { get; set; }
 
+        private bool Paid = false;
+
+        public bool _Paid
+        {
+            get
+            {
+                return Paid;
+            }
+            set
+            {
+                Paid = value;
+            }
+        }
+
         public virtual Customer Customer { get; set; } 
     }
 }
