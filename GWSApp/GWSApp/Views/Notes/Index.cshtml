@@ -1,7 +1,7 @@
 ﻿@model IEnumerable<GWSApp.Models.Note>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Notes";
 }
 
 <h2>Index</h2>
@@ -9,6 +9,13 @@
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+
+@using (Html.BeginForm("Index", "Notes", FormMethod.Get))
+{
+    <p>
+        Search customer by Surname: @Html.TextBox("SearchString") <input type="submit" value="Search" />
+    </p>
+}
 <table class="table">
     <tr>
         <th>

@@ -4,7 +4,7 @@
     ViewBag.Title = "Index";
 }
 
-@ViewBag.AppData
+
 <h2>Customers</h2>
 
 @using (Html.BeginForm("Index", "Customers", FormMethod.Get))
@@ -17,7 +17,7 @@
 <p>@Html.ActionLink("Create New Customer Record", "Create")</p>
 
 
-<p>@Html.ActionLink("Import CSV File", "ImportCsv")</p>
+<p>@Html.ActionLink("Import CSV File", "ImportCsv",new{}, new { onclick = "return confirm('Importing CSV Will Erase the Database. Are you sure?');" })</p>
 <p>@Html.ActionLink("Export to CSV", "ExportToCsv")</p>
 
 <table class="table">

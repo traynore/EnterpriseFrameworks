@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -9,7 +10,6 @@ using System.Web.Mvc;
 using GWSApp.DAL;
 using GWSApp.Models;
 using CsvHelper;
-using System.IO;
 
 namespace GWSApp.Controllers
 {
@@ -340,6 +340,43 @@ namespace GWSApp.Controllers
 
             return View();
 
+        }
+
+        public void ExportToCSV()
+        {
+            // get array of Customer properties
+            var customerFields = typeof(Customer).GetProperties();
+
+            StringWriter sw = new StringWriter();
+
+            sw.WriteLine("\"ID\",\"InvoiceNumber\",\"Surname\",\"Name\",\"Address1\",\"Address2\",\"Address3\",\"Address4\",\"Telephone\",\"Email\"");
+
+            Response.ClearContent();
+            Response.AddHeader("content-disposition", "attachment;filename=ExportedCustomerList.csv");
+            Response.ContentType = "text/csv";
+
+            var customers = from m in db.Customers
+                         select m;
+
+            foreach (var customer in customers)
+            {
+
+                sw.WriteLine(customer.ID + "," 
+                    + customer.InvoiceNumber + "," 
+                    + customer.LastName + "," 
+                    + customer.FirstName + ","
+                    + customer.Address1 + ","
+                    + customer.Address2 + ","
+                    + customer.Address3 + ","
+                    + customer.Address4 + ","
+                    + customer.Telephone + ","
+                    + customer.Email);
+
+            }
+
+            Response.Write(sw.ToString());
+            Response.End();
+            
         }
 
         protected override void Dispose(bool disposing)

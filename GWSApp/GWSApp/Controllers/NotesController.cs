@@ -16,9 +16,15 @@ namespace GWSApp.Controllers
         private GWSContext db = new GWSContext();
 
         // GET: Notes
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
-            var notes = db.Notes.Include(n => n.Customer);
+            var notes = from m in db.Notes.Include(i => i.Customer) select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                notes = notes.Where(s => s.Customer.LastName.Equals(searchString));
+            }
+
             return View(notes.ToList());
         }
 
@@ -49,7 +55,7 @@ namespace GWSApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,_Date,CustomerID,NoteText")] Note note)
+        public ActionResult Create([Bind(Include = "ID,CustomerID,NoteText")] Note note)
         {
             if (ModelState.IsValid)
             {

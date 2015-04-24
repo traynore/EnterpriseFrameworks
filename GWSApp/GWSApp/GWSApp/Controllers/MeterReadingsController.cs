@@ -16,6 +16,7 @@ namespace GWSApp.Controllers
         private GWSContext db = new GWSContext();
 
         // GET: MeterReadings
+        [HttpPost]
         public ActionResult Index()
         {
             if (Request.QueryString["error"] == "error")
@@ -23,6 +24,18 @@ namespace GWSApp.Controllers
                 ViewBag.Error = "<p class='text-danger'>Meter Reading for that year and customer exist already. Please Edit instead.</p>";
             }
             var meterReadings = db.MeterReadings.Include(m => m.Customer);
+            return View(meterReadings.ToList());
+        }
+        [HttpGet]
+        public ActionResult Index(string searchString)
+        {
+            var meterReadings = from m in db.MeterReadings.Include(i => i.Customer) select m;
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                meterReadings = meterReadings.Where(s => s.Customer.LastName.Equals(searchString));
+            }
+
             return View(meterReadings.ToList());
         }
 
@@ -112,7 +125,7 @@ namespace GWSApp.Controllers
                 {
                     if (meterReading.Quantity >= rates.BandC)
                     {
-                        newInvoice.QtyRateB = rates.BandC - rates.BandB; // 800-400 = 400
+                        newInvoice.QtyRateC = rates.BandC - rates.BandB; // 800-400 = 400
                     }
                     else
                     {

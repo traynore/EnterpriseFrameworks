@@ -4,11 +4,21 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Invoices</h2>
+
+@Html.Raw(ViewBag.Message)
+
+@Html.ActionLink("Mail", "Mail")
 
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
+@using (Html.BeginForm("Index", "Invoices", FormMethod.Get))
+{
+    <p>
+        Search customer by Surname: @Html.TextBox("SearchString") <input type="submit" value="Search" />
+    </p>
+}
 <table class="table">
     <tr>
         <th>
@@ -17,7 +27,7 @@
         <th>
             @Html.DisplayNameFor(model => model.Year)
         </th>
-        <th>
+        <!--<th>
             @Html.DisplayNameFor(model => model.QtyRateA)
         </th>
         <th>
@@ -46,7 +56,7 @@
         </th>
         <th>
             @Html.DisplayNameFor(model => model.SubtotalE)
-        </th>
+        </th>-->
         <th>
             @Html.DisplayNameFor(model => model.Total)
         </th>
@@ -70,7 +80,7 @@
         <td>
             @Html.DisplayFor(modelItem => item.Year)
         </td>
-        <td>
+        <!--<td>
             @Html.DisplayFor(modelItem => item.QtyRateA)
         </td>
         <td>
@@ -99,7 +109,7 @@
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.SubtotalE)
-        </td>
+        </td>-->
         <td>
             @Html.DisplayFor(modelItem => item.Total)
         </td>
@@ -113,6 +123,8 @@
             @Html.DisplayFor(modelItem => item.AmountPaid)
         </td>
         <td>
+            @Html.ActionLink("Create PDF", "ExportPdf", new { id = item.ID }) |
+            @Html.ActionLink("Email invoice", "Mail", new { id = item.ID }) |
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
             @Html.ActionLink("Details", "Details", new { id=item.ID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })

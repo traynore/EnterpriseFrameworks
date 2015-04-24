@@ -8,8 +8,6 @@
 
 @Html.Raw(ViewBag.Message)
 
-@Html.ActionLink("Mail", "Mail")
-
 <p>
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -124,7 +122,14 @@
         </td>
         <td>
             @Html.ActionLink("Create PDF", "ExportPdf", new { id = item.ID }) |
-            @Html.ActionLink("Email invoice", "Mail", new { id = item.ID }) |
+            @{
+                if (item.Customer.Email != null)
+                {
+                    @Html.ActionLink("Email invoice", "Mail", new { id = item.ID })
+                    @Html.Raw(" |")
+                }
+            }
+
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
             @Html.ActionLink("Details", "Details", new { id=item.ID }) |
             @Html.ActionLink("Delete", "Delete", new { id=item.ID })

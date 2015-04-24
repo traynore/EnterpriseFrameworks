@@ -5,10 +5,16 @@
 }
 
 <h2>Meter Readings</h2>
+
 <p>Quantities in cubic metres.</p>
 
 @Html.Raw(ViewBag.Error)
-
+@using (Html.BeginForm("Index", "MeterReadings", FormMethod.Get))
+{
+    <p>
+        Search customer by Surname: @Html.TextBox("SearchString") <input type="submit" value="Search" />
+    </p>
+}
 <p>
     @Html.ActionLink("Enter New Reading", "Create")
 </p>

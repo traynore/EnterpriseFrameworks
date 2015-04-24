@@ -18,12 +18,6 @@ namespace GWSApp.Controllers
         private GWSContext db = new GWSContext();
 
         // GET: Customers
-        [HttpPost]
-        public ActionResult Index()
-        {
-            return View(db.Customers.ToList());
-        }
-        [HttpGet]
         public ActionResult Index(string searchString)
         {
             var customers = from m in db.Customers

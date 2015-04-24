@@ -132,71 +132,70 @@ C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\GWSApp\
 C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\GWSApp\GWSApp\obj\Debug\GWSApp.csproj.GenerateResource.Cache
 C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\GWSApp\GWSApp\obj\Debug\GWSApp.dll
 C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\GWSApp\GWSApp\obj\Debug\GWSApp.pdb
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\GWSApp.dll.config
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\GWSApp.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\GWSApp.pdb
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Antlr3.Runtime.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\CsvHelper.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\EntityFramework.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\EntityFramework.SqlServer.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\itextsharp.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\itextsharp.pdfa.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\itextsharp.xtra.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.AspNet.Identity.Core.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.AspNet.Identity.Owin.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Host.SystemWeb.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Cookies.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Security.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Facebook.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Google.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Security.OAuth.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Twitter.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Web.Infrastructure.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Newtonsoft.Json.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Owin.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\System.Web.Helpers.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\System.Web.Mvc.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\System.Web.Optimization.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\System.Web.Razor.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\System.Web.WebPages.Deployment.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\System.Web.WebPages.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\System.Web.WebPages.Razor.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\WebGrease.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\CsvHelper.pdb
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\CsvHelper.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\itextsharp.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\System.Web.Helpers.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\System.Web.Mvc.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\System.Web.Optimization.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\System.Web.Razor.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\System.Web.WebPages.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\System.Web.WebPages.Deployment.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\System.Web.WebPages.Razor.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Antlr3.Runtime.pdb
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Newtonsoft.Json.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\EntityFramework.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\EntityFramework.SqlServer.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.AspNet.Identity.Core.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.AspNet.Identity.Owin.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Host.SystemWeb.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Security.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Facebook.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Cookies.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Security.OAuth.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Google.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Twitter.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\obj\Debug\GWSApp.csprojResolveAssemblyReference.cache
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.meterEdit.resources
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.meterEditrollback.resources
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.notedate.resources
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.noteformat.resources
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\obj\Debug\GWSApp.csproj.GenerateResource.Cache
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\obj\Debug\GWSApp.dll
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\obj\Debug\GWSApp.pdb
-C:\Users\emmett.traynor.LIBERTY-IE\Documents\Visual Studio 2013\Projects\EnterpriseFrameworks\GWSApp\GWSApp\obj\Debug\GWSApp.Properties.Resources.resources
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\GWSApp.dll.config
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\GWSApp.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\GWSApp.pdb
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Antlr3.Runtime.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\CsvHelper.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\EntityFramework.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\EntityFramework.SqlServer.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\itextsharp.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\itextsharp.pdfa.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\itextsharp.xtra.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.AspNet.Identity.Core.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Cookies.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Security.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Facebook.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Google.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Security.OAuth.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Twitter.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Web.Infrastructure.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Newtonsoft.Json.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Owin.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\System.Web.Helpers.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\System.Web.Mvc.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\System.Web.Optimization.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\System.Web.Razor.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\System.Web.WebPages.Deployment.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\System.Web.WebPages.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\System.Web.WebPages.Razor.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\WebGrease.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\CsvHelper.pdb
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\CsvHelper.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\itextsharp.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\System.Web.Helpers.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\System.Web.Mvc.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\System.Web.Optimization.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\System.Web.Razor.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\System.Web.WebPages.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\System.Web.WebPages.Deployment.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\System.Web.WebPages.Razor.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Antlr3.Runtime.pdb
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Newtonsoft.Json.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\EntityFramework.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\EntityFramework.SqlServer.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.AspNet.Identity.Core.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Security.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Facebook.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Cookies.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Security.OAuth.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Google.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Security.Twitter.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.csprojResolveAssemblyReference.cache
+C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.meterEdit.resources
+C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.meterEditrollback.resources
+C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.notedate.resources
+C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.noteformat.resources
+C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.csproj.GenerateResource.Cache
+C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.dll
+C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.pdb
