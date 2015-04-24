@@ -26,7 +26,7 @@
             @Html.DisplayNameFor(model => model.InvoiceNumber)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.LastName)
+            @Html.ActionLink("Last Name", "Index", new { sortOrder = ViewBag.NameSortParm })
         </th>
         <th>
             @Html.DisplayNameFor(model => model.FirstName)

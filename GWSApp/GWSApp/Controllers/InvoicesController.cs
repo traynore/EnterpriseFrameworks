@@ -22,8 +22,9 @@ namespace GWSApp.Controllers
 
         // GET: Invoices
         [HttpGet]
-        public ActionResult Index(string searchString)
+        public ActionResult Index(string sortOrder, string searchString)
         {
+            ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
 
             if (Request.QueryString != null)
             {
@@ -57,6 +58,16 @@ namespace GWSApp.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
                 invoices = invoices.Where(s => s.Customer.LastName.Equals(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    invoices = invoices.OrderByDescending(s => s.Customer.LastName);
+                    break;
+                default:
+                    invoices = invoices.OrderBy(s => s.Customer.LastName);
+                    break;
             }
 
             return View(invoices.ToList());

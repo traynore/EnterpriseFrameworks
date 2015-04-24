@@ -16,13 +16,25 @@ namespace GWSApp.Controllers
         private GWSContext db = new GWSContext();
 
         // GET: Notes
-        public ActionResult Index(string searchString)
+        public ActionResult Index(string sortOrder, string searchString)
         {
+            ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+
             var notes = from m in db.Notes.Include(i => i.Customer) select m;
 
             if (!String.IsNullOrEmpty(searchString))
             {
                 notes = notes.Where(s => s.Customer.LastName.Equals(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    notes = notes.OrderByDescending(s => s.Customer.LastName);
+                    break;
+                default:
+                    notes = notes.OrderBy(s => s.Customer.LastName);
+                    break;
             }
 
             return View(notes.ToList());

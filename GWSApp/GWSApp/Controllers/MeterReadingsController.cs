@@ -16,8 +16,11 @@ namespace GWSApp.Controllers
         private GWSContext db = new GWSContext();
 
         // GET: MeterReadings
-        public ActionResult Index(string searchString)
+        public ActionResult Index(string sortOrder, string searchString)
         {
+
+            ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+
             // error message displays if user tried to create multiple meter readings in a single billing period
             if (Request.QueryString["error"] == "error")
             {
@@ -29,6 +32,16 @@ namespace GWSApp.Controllers
             if (!String.IsNullOrEmpty(searchString))
             {
                 meterReadings = meterReadings.Where(s => s.Customer.LastName.Equals(searchString));
+            }
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    meterReadings = meterReadings.OrderByDescending(s => s.Customer.LastName);
+                    break;
+                default:
+                    meterReadings = meterReadings.OrderBy(s => s.Customer.LastName);
+                    break;
             }
 
             return View(meterReadings.ToList());
