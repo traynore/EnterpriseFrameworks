@@ -16,14 +16,22 @@ namespace GWSApp.Controllers
         private GWSContext db = new GWSContext();
 
         // GET: Notes
-        public ActionResult Index(string sortOrder, string searchString)
+        public ActionResult Index(string sortOrder, string currentFilter, string searchString)
         {
+            ViewBag.CurrentSort = sortOrder;
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.DateSortParm = sortOrder == "Date" ? "date_desc" : "Date";
+
+            if (searchString == null)
+            {
+                searchString = currentFilter;
+            }
 
             var notes = from m in db.Notes.Include(i => i.Customer) select m;
 
             if (!String.IsNullOrEmpty(searchString))
             {
+                ViewBag.CurrentFilter = searchString;
                 notes = notes.Where(s => s.Customer.LastName.Equals(searchString));
             }
 
@@ -31,6 +39,12 @@ namespace GWSApp.Controllers
             {
                 case "name_desc":
                     notes = notes.OrderByDescending(s => s.Customer.LastName);
+                    break;
+                case "Date":
+                    notes = notes.OrderBy(s => s._Date);
+                    break;
+                case "date_desc":
+                    notes = notes.OrderByDescending(s => s._Date);
                     break;
                 default:
                     notes = notes.OrderBy(s => s.Customer.LastName);

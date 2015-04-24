@@ -138,6 +138,17 @@ namespace GWSApp.Controllers
         {
             if (ModelState.IsValid)
             {
+                if (invoice.GrandTotal == invoice.AmountPaid)
+                {
+                    invoice._Paid = true;
+                    // create a new note to record that invoice was paid
+                    Customer customer = db.Customers.Find(invoice.CustomerID);
+                    Note newNote = new Note();
+                    newNote.CustomerID = customer.ID;
+                    newNote.NoteText = "Invoice of " + customer.FullName + " for year " + invoice.Year + " has been paid in full.";
+                    db.Notes.Add(newNote);
+                    db.SaveChanges();
+                }
                 db.Entry(invoice).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

@@ -100,7 +100,7 @@ namespace GWSApp.Controllers
                 // create a new note
                 Note newNote = new Note();
                 newNote.CustomerID = meterReading.CustomerID;
-                newNote.NoteText = "Meter Reading added and Invoice Calculated at " + DateTime.Now + ".";
+                newNote.NoteText = "Meter Reading of " + meterReading.Quantity + " added and Invoice Calculated at " + DateTime.Now + ".";
                 db.Notes.Add(newNote);
                 db.SaveChanges();
 
@@ -158,7 +158,7 @@ namespace GWSApp.Controllers
                 // create a new note to record changes
                 Note newNote = new Note();
                 newNote.CustomerID = meterReading.CustomerID;
-                newNote.NoteText = "Meter Reading edited and fresh Invoice Calculated at " + DateTime.Now + ".";
+                newNote.NoteText = "Meter Reading edited to " + meterReading.Quantity + " and fresh Invoice Calculated at " + DateTime.Now + ".";
                 db.Notes.Add(newNote);
                 db.SaveChanges();
 

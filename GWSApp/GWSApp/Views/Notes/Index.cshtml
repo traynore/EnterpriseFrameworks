@@ -13,16 +13,16 @@
 @using (Html.BeginForm("Index", "Notes", FormMethod.Get))
 {
     <p>
-        Search customer by Surname: @Html.TextBox("SearchString") <input type="submit" value="Search" />
+        Search customer by Surname: @Html.TextBox("SearchString", ViewBag.CurrentFilter as string) <input type="submit" value="Search" />
     </p>
 }
 <table class="table">
     <tr>
         <th>
-            @Html.ActionLink("Full Name", "Index", new { sortOrder = ViewBag.NameSortParm })
+            @Html.ActionLink("Full Name", "Index", new { sortOrder = ViewBag.NameSortParm, currentFilter = ViewBag.CurrentFilter })
         </th>
         <th>
-            @Html.DisplayNameFor(model => model._Date)
+            @Html.ActionLink("Created At", "Index", new { sortOrder = ViewBag.DateSortParm, currentFilter = ViewBag.CurrentFilter })
         </th>
         <th>
             @Html.DisplayNameFor(model => model.NoteText)
