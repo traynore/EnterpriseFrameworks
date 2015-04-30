@@ -48,7 +48,7 @@ namespace GWSApp.Controllers
                 }
 
                 // error message for mailer
-                if (Request.QueryString["pdf"] == "error")
+                if (Request.QueryString["mail"] == "error")
                 {
                     ViewBag.Message = "<p>Error - Failed to Email Invoice.</p>";
                 }
