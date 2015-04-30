@@ -11,6 +11,7 @@ using GWSApp.Models;
 
 namespace GWSApp.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class RatesObjectsController : Controller
     {
         private GWSContext db = new GWSContext();
@@ -18,6 +19,11 @@ namespace GWSApp.Controllers
         // GET: RatesObjects
         public ActionResult Index()
         {
+            // error message displays if user tried to create more than one Rates Object
+            if (Request.QueryString["error"] == "error")
+            {
+                ViewBag.Error = "<p class='text-danger'>Cannot create another Rates configuration. Please Edit existing rates instead.</p>";
+            }
             return View(db.RatesObjects.ToList());
         }
 
@@ -42,7 +48,7 @@ namespace GWSApp.Controllers
             int count = db.RatesObjects.Count();
             if (count > 0)
                 {
-                    return RedirectToAction("Index");
+                    return RedirectToAction("Index", new { error = "error" });
                 }
             return View();
         }
@@ -90,6 +96,8 @@ namespace GWSApp.Controllers
             {
                 db.Entry(ratesObject).State = EntityState.Modified;
                 db.SaveChanges();
+                //overwrite Application Data with new rates
+                HttpContext.Application["Rates"] = ratesObject;
                 return RedirectToAction("Index");
             }
             return View(ratesObject);

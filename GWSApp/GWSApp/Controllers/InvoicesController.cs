@@ -16,6 +16,7 @@ using System.Threading.Tasks;
 
 namespace GWSApp.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class InvoicesController : Controller
     {
         private GWSContext db = new GWSContext();

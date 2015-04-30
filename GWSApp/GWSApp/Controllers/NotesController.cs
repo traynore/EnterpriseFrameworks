@@ -11,6 +11,7 @@ using GWSApp.Models;
 
 namespace GWSApp.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class NotesController : Controller
     {
         private GWSContext db = new GWSContext();

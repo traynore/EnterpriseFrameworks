@@ -9,6 +9,7 @@ using GWSApp.ViewModels;
 
 namespace GWSApp.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class CustomerInfoController : Controller
     {
 

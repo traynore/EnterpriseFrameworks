@@ -13,6 +13,7 @@ using CsvHelper;
 
 namespace GWSApp.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class CustomersController : Controller
     {
         private GWSContext db = new GWSContext();

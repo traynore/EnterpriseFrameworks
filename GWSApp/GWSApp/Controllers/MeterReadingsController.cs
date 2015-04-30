@@ -11,6 +11,7 @@ using GWSApp.Models;
 
 namespace GWSApp.Controllers
 {
+    [Authorize(Roles = "admin")]
     public class MeterReadingsController : Controller
     {
         private GWSContext db = new GWSContext();

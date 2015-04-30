@@ -20,6 +20,7 @@ namespace GWSApp
             var rates = AppdataConfig.LoadRates();
             if (rates != null)
             {
+                //store rates in App Data for quick access without DB Query
                 Application["Rates"] = rates;
             }
 
