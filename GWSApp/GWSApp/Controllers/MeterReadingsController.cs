@@ -225,13 +225,12 @@ namespace GWSApp.Controllers
             Invoice newInvoice = new Invoice();
             newInvoice.CustomerID = meterReading.CustomerID;
             newInvoice.Year = meterReading.Year;
-            // calculations of usage per band and subtotals; currently hardcoded for 5 bands
-            // calculation method based on spreadsheet sheet 2 billing rates, not 2013 data
+            // calculations of usage per band and subtotals; currently hardcoded for 4 bands
             if (meterReading.Quantity > 0)
             {
                 if (meterReading.Quantity >= rates.BandA)
                 {
-                    newInvoice.QtyRateA = rates.BandA;  // default 115
+                    newInvoice.QtyRateA = rates.BandA;  // default 90
                 }
                 else
                 {
@@ -244,7 +243,7 @@ namespace GWSApp.Controllers
             {
                 if (meterReading.Quantity >= rates.BandB)
                 {
-                    newInvoice.QtyRateB = rates.BandB - rates.BandA; // maximum for band B 400-115 = 285
+                    newInvoice.QtyRateB = rates.BandB - rates.BandA; // maximum for band B 400-90 = 310
                 }
                 else
                 {
@@ -266,26 +265,14 @@ namespace GWSApp.Controllers
                 newInvoice.SubtotalC = newInvoice.QtyRateC * rates.RateC;
             }
 
+
             if (meterReading.Quantity > rates.BandC)
             {
-                if (meterReading.Quantity >= rates.BandD)
-                {
-                    newInvoice.QtyRateD = rates.BandD - rates.BandC; // 1500-800 = 700
-                }
-                else
-                {
-                    newInvoice.QtyRateD = meterReading.Quantity - rates.BandC;
-                }
+                newInvoice.QtyRateD = meterReading.Quantity - rates.BandC;
                 newInvoice.SubtotalD = newInvoice.QtyRateD * rates.RateD;
             }
 
-            if (meterReading.Quantity > rates.BandD)
-            {
-                newInvoice.QtyRateE = meterReading.Quantity - rates.BandD;
-                newInvoice.SubtotalE = newInvoice.QtyRateE * rates.RateE;
-            }
-
-            newInvoice.Total = newInvoice.SubtotalA + newInvoice.SubtotalB + newInvoice.SubtotalC + newInvoice.SubtotalD + newInvoice.SubtotalE;
+            newInvoice.Total = newInvoice.SubtotalA + newInvoice.SubtotalB + newInvoice.SubtotalC + newInvoice.SubtotalD;
             newInvoice.GrandTotal = newInvoice.Total + newInvoice.Arrears;
             db.Invoices.Add(newInvoice);
 

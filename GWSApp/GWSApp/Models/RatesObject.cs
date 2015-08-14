@@ -11,13 +11,12 @@ namespace GWSApp.Models
 
         public int ID { get; set; } 
 
-        // hardcoded for 5 bands at present
+        // hardcoded for 4 bands at present
         public string Description { get; set; }
         public int BandA { get; set; }
         public int BandB { get; set; }
         public int BandC { get; set; }
-        public int BandD { get; set; }
-        // E = 1500+ 
+        // D = 801+ 
 
         [DataType(DataType.Currency)]
         public float RateA { get; set; }
@@ -27,8 +26,6 @@ namespace GWSApp.Models
         public float RateC { get; set; }
         [DataType(DataType.Currency)]
         public float RateD { get; set; }
-        [DataType(DataType.Currency)]
-        public float RateE { get; set; }
 
     }
 }

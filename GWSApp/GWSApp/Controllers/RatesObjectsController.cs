@@ -58,7 +58,7 @@ namespace GWSApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Description,BandA,BandB,BandC,BandD,RateA,RateB,RateC,RateD,RateE")] RatesObject ratesObject)
+        public ActionResult Create([Bind(Include = "ID,Description,BandA,BandB,BandC,RateA,RateB,RateC,RateD")] RatesObject ratesObject)
         {
             if (ModelState.IsValid)
             {
@@ -90,7 +90,7 @@ namespace GWSApp.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Description,BandA,BandB,BandC,BandD,RateA,RateB,RateC,RateD,RateE")] RatesObject ratesObject)
+        public ActionResult Edit([Bind(Include = "ID,Description,BandA,BandB,BandC,RateA,RateB,RateC,RateD,")] RatesObject ratesObject)
         {
             if (ModelState.IsValid)
             {

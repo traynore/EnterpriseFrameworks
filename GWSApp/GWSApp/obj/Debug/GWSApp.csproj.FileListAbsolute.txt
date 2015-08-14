@@ -201,3 +201,4 @@ C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.dll
 C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.pdb
 C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.invoicePaidFlag.resources
 C:\Users\Nihil\documents\visual studio 2013\Projects\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.invoicePaidFlag.resources
+C:\EFProjectGitRepo\GWSApp\GWSApp\obj\Debug\GWSApp.Migrations.bandsedited.resources

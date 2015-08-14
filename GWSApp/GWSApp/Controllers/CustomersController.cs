@@ -175,6 +175,7 @@ namespace GWSApp.Controllers
                     foreach (var customer in customers)
                     {
                         Customer newCust = new Customer();
+                        newCust.ID = int.Parse(customer.ID);
                         newCust.InvoiceNumber = int.Parse(customer.InvNo);
                         newCust.LastName = customer.Surname;
                         newCust.FirstName = customer.Name;
@@ -182,7 +183,10 @@ namespace GWSApp.Controllers
                         newCust.Address2 = customer.Address2;
                         newCust.Address3 = customer.Address3;
                         newCust.Address4 = customer.Address4;
+                        newCust.Email = customer.Email;
+                        newCust.Telephone = customer.Telephone;
                         db.Customers.Add(newCust);
+                        /* not used in current version
                         //convert empty strings to "0" so they can be parsed as numerical data
                         if (customer.Arrears2008 == "")
                         {
@@ -251,7 +255,7 @@ namespace GWSApp.Controllers
                         if (customer.Paid == "")
                         {
                             customer.Paid = "0";
-                        }
+                        } 
                         
                         db.SaveChanges(); //necessary to save here to generate an ID for the customer
 
@@ -327,7 +331,7 @@ namespace GWSApp.Controllers
                             db.Invoices.Add(invoice13);
 
                         }
-
+                        */
 
 
                     }

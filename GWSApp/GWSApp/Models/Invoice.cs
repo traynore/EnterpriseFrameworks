@@ -16,7 +16,6 @@ namespace GWSApp.Models
         public int QtyRateB { get; set; }
         public int QtyRateC { get; set; }
         public int QtyRateD { get; set; }
-        public int QtyRateE { get; set; }
         // subtotals etc could be calculated dynamically, but it seems best to generate an invoice once and store it to reduce DB queries
         [DataType(DataType.Currency)]
         public float SubtotalA { get; set; }
@@ -26,8 +25,6 @@ namespace GWSApp.Models
         public float SubtotalC { get; set; }
         [DataType(DataType.Currency)]
         public float SubtotalD { get; set; }
-        [DataType(DataType.Currency)]
-        public float SubtotalE { get; set; }
         [DataType(DataType.Currency)]
         public float Total { get; set; }
         [DataType(DataType.Currency)]

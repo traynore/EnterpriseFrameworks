@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -204,9 +205,12 @@
     <Compile Include="Migrations\201504241421041_invoicePaidFlag.Designer.cs">
       <DependentUpon>201504241421041_invoicePaidFlag.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201508140807500_bandsedited.cs" />
+    <Compile Include="Migrations\201508140807500_bandsedited.Designer.cs">
+      <DependentUpon>201508140807500_bandsedited.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\Class1.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ImportCustomer.cs" />
@@ -229,6 +233,8 @@
     <Content Include="Content\Site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\gwsapp - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\gwsapp - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -330,6 +336,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201504241421041_invoicePaidFlag.resx">
       <DependentUpon>201504241421041_invoicePaidFlag.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508140807500_bandsedited.resx">
+      <DependentUpon>201508140807500_bandsedited.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

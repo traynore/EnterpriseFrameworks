@@ -9,6 +9,7 @@ namespace GWSApp.Models
     {
         /*object used to hold imported records from csv file. Column names match the csv. All properties are strings to avoid type errors  
          * with the csv reader, then the data is converted into the correct type when the respective objects are instantiated */
+        public string ID { get; set; }
         public string InvNo { get; set; }
         public string Surname { get; set; }
         public string Name { get; set; }
@@ -16,6 +17,11 @@ namespace GWSApp.Models
         public string Address2 { get; set; }
         public string Address3 { get; set; }
         public string Address4 { get; set; }
+        public string Address5 { get; set; }
+        public string Email { get; set; }
+        public string Telephone { get; set; }
+
+        /* no longer needed in production version
         public string QtyRateA { get; set; }
         public string ASubTotal { get; set; }
         public string QtyRateB { get;  set; }
@@ -33,6 +39,6 @@ namespace GWSApp.Models
         public string Arrears2011 { get; set; }
         public string TotalArrears { get; set; }
         public string GrandTotal { get; set; }
-        public string Paid { get; set; }
+        public string Paid { get; set; } */
     }
 }
