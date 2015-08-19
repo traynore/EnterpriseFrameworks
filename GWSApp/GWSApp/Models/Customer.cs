@@ -41,6 +41,15 @@ namespace GWSApp.Models
             }
         }
 
+        [Display(Name = "Name & Address")]
+        public string NameAddress
+        {
+            get
+            {
+                return LastName + ", " + FirstName + ", " + Address1;
+            }
+        }
+
         public virtual ICollection<MeterReading> MeterReadings { get; set; }
         public virtual ICollection<Invoice> Invoices { get; set; }
         public virtual ICollection<Note> Notes { get; set; }

@@ -66,7 +66,7 @@ namespace GWSApp.Controllers
         // GET: MeterReadings/Create
         public ActionResult Create()
         {
-            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "FullName");
+            ViewBag.CustomerID = new SelectList(db.Customers, "ID", "NameAddress");
             return View();
         }
 
